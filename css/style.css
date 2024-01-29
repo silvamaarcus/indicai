@@ -6,7 +6,7 @@
 }
 
 .color-black {
-  color: #06090f;
+  color: #121114;
 }
 
 .color-white {
@@ -14,11 +14,11 @@
 }
 
 .color-primary {
-  color: #5390e3;
+  color: #A6B4FC;
 }
 
 .color-gradient {
-  background: linear-gradient(224.78deg, #5390e3 8.12%, #1357b3 92.21%) !important;
+  background: linear-gradient(224.78deg, #8498FF 8.12%, #4967FF 92.21%) !important;
   background-clip: text;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
@@ -434,39 +434,39 @@
 }
 
 .bb-black {
-  border-bottom: 1px solid #151b26;
+  border-bottom: 1px solid #28252D;
 }
 
 .bt-black {
-  border-top: 1px solid #151b26;
+  border-top: 1px solid #28252D;
 }
 
 .bl-black {
-  border-left: 1px solid #151b26;
+  border-left: 1px solid #28252D;
 }
 
 .br-black {
-  border-right: 1px solid #151b26;
+  border-right: 1px solid #28252D;
 }
 
 .bb-gray {
-  border-bottom: 2px solid #0f141f;
+  border-bottom: 2px solid #161419;
 }
 
 .bt-gray {
-  border-top: 2px solid #0f141f;
+  border-top: 2px solid #161419;
 }
 
 .bl-gray {
-  border-left: 2px solid #0f141f;
+  border-left: 2px solid #161419;
 }
 
 .br-gray {
-  border-right: 2px solid #0f141f;
+  border-right: 2px solid #161419;
 }
 
 .bg-gray {
-  background-color: #0f141f;
+  background-color: #161419;
 }
 
 .logo {
@@ -488,11 +488,11 @@
 
 .profile-img {
   border-radius: 50%;
-  border: 2px solid #1b69d2;
+  border: 2px solid #8498FF;
 }
 
 .card {
-  border: 1px solid #151b26;
+  border: 1px solid #28252D;
   border-radius: 4px;
   background-color: rgba(15, 20, 31, 0);
   transition: 0.2s ease;
@@ -524,9 +524,36 @@
 }
 
 .card-info {
-  border: 2px solid #1b69d2;
+  border: 2px solid #8498FF;
   border-radius: 4px;
   background-color: rgba(27, 105, 210, 0.2);
+}
+
+.pill-button {
+  background-color: transparent;
+  border: 1px solid #8498FF;
+  border-radius: 32px;
+  padding: 10px 14px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s;
+  font-size: 16px;
+  color: #8498FF;
+}
+
+.pill-button:hover {
+  background-color: #eaecff;
+  color: #4967FF;
+}
+
+.respostas {
+  gap: 32px;
+}
+
+@media screen and (max-width: 960px) {
+  .fix-opcoes-generos {
+    width: 100% !important;
+  }
 }
 
 .s-0 {
@@ -1467,7 +1494,7 @@ p {
 span {
   position: relative;
   display: inline-block;
-  color: #1b69d2;
+  color: #8498FF;
 }
 
 .letter-h1 {
@@ -1489,7 +1516,7 @@ span {
 }
 
 strong {
-  color: #06090f;
+  color: #121114;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -1562,7 +1589,7 @@ html {
 
 body {
   width: 100%;
-  background-color: #06090f;
+  background-color: #121114;
 }
 body::-webkit-scrollbar {
   padding-right: 4px;
@@ -1571,7 +1598,7 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background: #151b26;
+  background: #28252D;
 }
 
 .border {
@@ -1652,7 +1679,7 @@ a:hover {
 }
 
 input {
-  accent-color: #1b69d2;
+  accent-color: #8498FF;
 }
 
 input,
@@ -1660,7 +1687,7 @@ select,
 option,
 textarea {
   padding: 10px 12px;
-  background-color: #151b26;
+  background-color: #28252D;
   border: 0;
   border-radius: 4px;
   width: 100%;
@@ -1680,7 +1707,7 @@ option {
   display: inline-block;
   padding: 8px 24px;
   color: #f7f9fc;
-  background: linear-gradient(224.78deg, #5390e3 8.12%, #1357b3 92.21%) !important;
+  background: linear-gradient(224.78deg, #8498FF 8.12%, #4967FF 92.21%) !important;
   border-radius: 4px;
   border: 0;
   font-family: "Rubik", sans-serif;

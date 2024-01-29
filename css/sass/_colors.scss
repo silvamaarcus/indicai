@@ -1,15 +1,15 @@
 // Cores do Projeto
 
 // Cores Principais
-$primary-normal: #1b69d2;
-$primary-dark: #1357b3;
-$primary-light: #5390e3;
+$primary-normal: #8498FF;
+$primary-dark: #4967FF;
+$primary-light: #A6B4FC;
 
 // Cores Neutras
-$black-normal: #0f141f;
-$black-dark: #06090f;
-$black-light: #151b26;
-$black-darken: #0f141f;
+$black-normal: #161419;
+$black-dark: #121114;
+$black-light: #28252D;
+$black-darken: #2F2D33;
 $black-super: #0000;
 
 $white-normal: #e8ebf0;
@@ -53,8 +53,8 @@ $yellow-light: #ffd76b;
 .color-gradient {
   background: linear-gradient(
     224.78deg,
-    #5390e3 8.12%,
-    #1357b3 92.21%
+    #8498FF 8.12%,
+    #4967FF 92.21%
   ) !important;
   background-clip: text;
   -webkit-background-clip: text !important;

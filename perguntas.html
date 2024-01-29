@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#161419">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="keywords" content="filmes, ia, escolhas, ator, diretor">
+  <meta name="author" content="Marcus Silva">
+
+  <!--============= CSS =============-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <!--============= META TAGS PRIMARIAS =============-->
+  <title>IndicAI | Perguntas</title>
+  <meta name="title" content="IndicAI">
+  <meta name="description" content="Apontador de filmes">
+
+  <!--============= OPENG GRAPH / FACEBOOK =============-->
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="svg/">
+
+  <!--============= TWITTER =============-->
+  <meta property="og:card" content="summary_large_image">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="svg/">
+
+  <!--============= SCRIPTS =============-->
+  <script src="js/svg-inject.min.js"></script>
+
+</head>
+
+<body>
+  <section class="container flex-center-column p-0">
+    <a href="/index.html" class="flex-center py-5">
+      <img src="svg/indicai.svg" alt="IndicAI" class="w-25">
+    </a>
+  </section>
+
+  <section class="container text-center py-0">
+    <div class="row flex-center-column">
+      <h5 class="pt-4">Você prefere filmes que façam pensar ou filmes mais leves e descontraídos?</h5>
+      <div class="respostas flex-start-row py-4">
+        <button class="pill-button" onclick="handleClick()">Pensar</button>
+        <button class="pill-button" onclick="handleClick()">Descontraídos</button>
+      </div>
+    </div>
+
+    <div class="row flex-center-column">
+      <h5 class="pt-4">Qual gênero de filme você pretende assistir?</h5>
+      <div class="respostas flex-center flex-wrap py-4 w-75 fix-opcoes-generos">
+        <button class="pill-button" onclick="handleClick()">Ação</button>
+        <button class="pill-button" onclick="handleClick()">Animação</button>
+        <button class="pill-button" onclick="handleClick()">Comédia</button>
+        <button class="pill-button" onclick="handleClick()">Musical</button>
+        <button class="pill-button" onclick="handleClick()">Romance</button>
+        <button class="pill-button" onclick="handleClick()">Ficção Científica</button>
+        <button class="pill-button" onclick="handleClick()">Documentário</button>
+        <button class="pill-button" onclick="handleClick()">Suspense</button>
+        <button class="pill-button" onclick="handleClick()">Drama</button>
+        <button class="pill-button" onclick="handleClick()">Fantasia</button>
+        <button class="pill-button" onclick="handleClick()">Terror</button>
+      </div>
+    </div>
+
+    <div class="row flex-center-column">
+      <h5 class="pt-4">Você prefere filmes antigos ou mais recentes?</h5>
+      <div class="respostas flex-start-row py-4">
+        <button class="pill-button" onclick="handleClick()">Antigos</button>
+        <button class="pill-button" onclick="handleClick()">Recentes</button>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
+</html>
