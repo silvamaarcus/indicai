@@ -480,6 +480,12 @@
   border-radius: 50%;
 }
 
+.profile-med {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+
 .profile-big {
   width: 128px;
   height: 128px;
@@ -546,7 +552,13 @@
   color: #4967FF;
 }
 
-.respostas {
+.pill-button.active {
+  background-color: #eaecff;
+  color: #4967FF;
+}
+
+.respostas,
+.gap-32 {
   gap: 32px;
 }
 
@@ -554,6 +566,10 @@
   .fix-opcoes-generos {
     width: 100% !important;
   }
+}
+
+.capa-filme {
+  border-radius: 32px;
 }
 
 .s-0 {
@@ -1488,7 +1504,6 @@ p {
 
 .bold {
   font-weight: bold;
-  color: #d8dbe3;
 }
 
 span {

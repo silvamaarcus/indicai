@@ -317,6 +317,12 @@ $gutter: 32px;
 
   border-radius: 50%;
 }
+.profile-med {
+  width: 96px;
+  height: 96px;
+
+  border-radius: 50%;
+}
 .profile-big {
   width: 128px;
   height: 128px;
@@ -388,7 +394,13 @@ $gutter: 32px;
   color: $primary-dark;
 }
 
-.respostas {
+.pill-button.active {
+  background-color: #eaecff;
+  color: $primary-dark;
+}
+
+.respostas,
+.gap-32 {
   gap: 32px;
 }
 
@@ -396,4 +408,8 @@ $gutter: 32px;
   @include responsive(s) {
     width: 100% !important;
   }
+}
+
+.capa-filme {
+  border-radius: 32px;
 }
