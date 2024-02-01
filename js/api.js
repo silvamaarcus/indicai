@@ -36,7 +36,6 @@ async function buscar() {
     api_key: apiKey,
     sort_by: "popularity.desc", // Ordenar por popularidade (filmes ou séries mais assistidos primeiro)
     with_genres: genre,
-    vote_count: "1000", // para garantir que tenhamos uma quantidade significativa de votos
     with_original_language: "en", // Filmes ou séries com linguagem original em inglês
     language: "pt-BR", // Solicitar resultados em português
   };
@@ -65,15 +64,24 @@ async function buscar() {
       throw new Error("Erro ao fazer solicitação à API");
     }
     const data = await response.json();
-    const mediaRecomendada = tipoFilme ? data.results[0] : data.results[0];
+    const mediaRecomendada = tipoFilme ? data.results[0] : data.results.find(media => media.media_type === 'tv');
     const titulo = tipoFilme ? "Filme" : "Série de TV";
-    alert(`Recomendação: ${mediaRecomendada.title || mediaRecomendada.name}`);
+    alert(`${mediaRecomendada.title || mediaRecomendada.name}`);
   } catch (error) {
     console.error(error);
     alert(
       "Ocorreu um erro ao buscar a recomendação. Por favor, tente novamente mais tarde."
     );
   }
+
+  limparRespostas();
+}
+
+function limparRespostas() {
+  // Remove a classe "active" de todos os botões de opção
+  document.querySelectorAll(".respostas button").forEach((btn) => {
+    btn.classList.remove("active");
+  });
 }
 
 document.querySelectorAll(".respostas button").forEach((btn) => {

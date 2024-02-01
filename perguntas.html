@@ -48,41 +48,54 @@
   <section class="container text-center py-0">
     <div class="row flex-center-column">
       <h5 class="pt-4">O que você prefere assistir, filmes ou séries de TV?</h5>
-      <div class="respostas flex-start-row py-4" id="tipo-opcao">
-        <button class="pill-button" id="opcao-filme" value="filme">Filmes</button>
-        <button class="pill-button" id="opcao-serie" value="serie">Séries de TV</button>
+      <div class="respostas flex-start-row py-4">
+        <button class="pill-button" onclick="selectType('movie')">Filmes</button>
+        <button class="pill-button" onclick="selectType('series')">Séries de TV</button>
       </div>
     </div>
 
     <div class="row flex-center-column">
       <h5 class="pt-4">Qual gênero você pretende assistir?</h5>
       <div class="respostas flex-center flex-wrap py-4 w-75 fix-opcoes-generos">
-        <button class="pill-button" value="28">Ação</button>
-        <button class="pill-button" value="16">Animação</button>
-        <button class="pill-button" value="35">Comédia</button>
-        <button class="pill-button" value="10402">Musical</button>
-        <button class="pill-button" value="10749">Romance</button>
-        <button class="pill-button" value="878">Ficção Científica</button>
-        <button class="pill-button" value="99">Documentário</button>
-        <button class="pill-button" value="53">Suspense</button>
-        <button class="pill-button" value="18">Drama</button>
-        <button class="pill-button" value="14">Fantasia</button>
-        <button class="pill-button" value="27">Terror</button>
+        <button class="pill-button" onclick="selectGenre('action')">Ação</button>
+        <button class="pill-button" onclick="selectGenre('animation')">Animação</button>
+        <button class="pill-button" onclick="selectGenre('comedy')">Comédia</button>
+        <button class="pill-button" onclick="selectGenre('musical')">Musical</button>
+        <button class="pill-button" onclick="selectGenre('romance')">Romance</button>
+        <button class="pill-button" onclick="selectGenre('sci-fi')">Ficção Científica</button>
+        <button class="pill-button" onclick="selectGenre('documentary')">Documentário</button>
+        <button class="pill-button" onclick="selectGenre('thriller')">Suspense</button>
+        <button class="pill-button" onclick="selectGenre('drama')">Drama</button>
+        <button class="pill-button" onclick="selectGenre('fantasy')">Fantasia</button>
+        <button class="pill-button" onclick="selectGenre('horror')">Terror</button>
       </div>
     </div>
 
     <div class="row flex-center-column">
       <h5 class="pt-4">Você prefere conteúdos antigos ou mais recentes?</h5>
       <div class="respostas flex-start-row py-4">
-        <button class="pill-button" value="old">Antigos</button>
-        <button class="pill-button" value="recent">Recentes</button>
+        <button class="pill-button" onclick="selectYear('old')">Antigos</button>
+        <button class="pill-button" onclick="selectYear('new')">Recentes</button>
       </div>
     </div>
 
-    <a href="#" class="btn" onclick="buscar()">Buscar<span class="ml-2"></span></a>
+    <a href="#" class="btn" onclick="search()">Buscar</a>
   </section>
 
-  <script src="js/api.js"></script>
+  <div id="results" class="grid-8" style="display: none;">
+    <h5 class="bold color-white" id="filme-nome"></h5>
+    <p id="filme-diretor"></p>
+    <h6 class="h7 bold mt-4">Resumo</h6>
+    <p class="mt-2" id="filme-sinopse"></p>
+  
+    <div class="elenco">
+      <h6 class="h7 bold mt-3">Elenco</h6>
+      <div class="mt-3 flex-start-row gap-32 flex-wrap" id="elenco"></div>
+    </div>
+  </div>
+
+  <!-- <script type="module" src="./js/app.js"></script> -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
