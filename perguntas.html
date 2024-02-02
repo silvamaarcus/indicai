@@ -49,25 +49,25 @@
     <div class="row flex-center-column">
       <h5 class="pt-4">O que você prefere assistir, filmes ou séries de TV?</h5>
       <div class="respostas flex-start-row py-4">
-        <button class="pill-button" onclick="selectType('movie')">Filmes</button>
-        <button class="pill-button" onclick="selectType('series')">Séries de TV</button>
+        <button class="pill-button" id="escolha-tipo-filmes" value="movies">Filmes</button>
+        <button class="pill-button" id="escolha-tipo-series" value="tv">Séries de TV</button>
       </div>
     </div>
 
     <div class="row flex-center-column">
       <h5 class="pt-4">Qual gênero você pretende assistir?</h5>
       <div class="respostas flex-center flex-wrap py-4 w-75 fix-opcoes-generos">
-        <button class="pill-button" onclick="selectGenre('action')">Ação</button>
-        <button class="pill-button" onclick="selectGenre('animation')">Animação</button>
-        <button class="pill-button" onclick="selectGenre('comedy')">Comédia</button>
-        <button class="pill-button" onclick="selectGenre('musical')">Musical</button>
-        <button class="pill-button" onclick="selectGenre('romance')">Romance</button>
-        <button class="pill-button" onclick="selectGenre('sci-fi')">Ficção Científica</button>
-        <button class="pill-button" onclick="selectGenre('documentary')">Documentário</button>
-        <button class="pill-button" onclick="selectGenre('thriller')">Suspense</button>
-        <button class="pill-button" onclick="selectGenre('drama')">Drama</button>
-        <button class="pill-button" onclick="selectGenre('fantasy')">Fantasia</button>
-        <button class="pill-button" onclick="selectGenre('horror')">Terror</button>
+        <button class="pill-button" value='action'>Ação</button>
+        <button class="pill-button" value='animation'>Animação</button>
+        <button class="pill-button" value='comedy'>Comédia</button>
+        <button class="pill-button" value='musical'>Musical</button>
+        <button class="pill-button" value='romance'>Romance</button>
+        <button class="pill-button" value='sci-fi'>Ficção Científica</button>
+        <button class="pill-button" value='documentary'>Documentário</button>
+        <button class="pill-button" value='thriller'>Suspense</button>
+        <button class="pill-button" value='drama'>Drama</button>
+        <button class="pill-button" value='fantasy'>Fantasia</button>
+        <button class="pill-button" value='horror'>Terror</button>
       </div>
     </div>
 
@@ -79,7 +79,7 @@
       </div>
     </div>
 
-    <a href="#" class="btn" onclick="search()">Buscar</a>
+    <a href="/filme.html" class="btn" onclick="buscar()">Buscar</a>
   </section>
 
   <div id="results" class="grid-8" style="display: none;">
@@ -87,7 +87,7 @@
     <p id="filme-diretor"></p>
     <h6 class="h7 bold mt-4">Resumo</h6>
     <p class="mt-2" id="filme-sinopse"></p>
-  
+
     <div class="elenco">
       <h6 class="h7 bold mt-3">Elenco</h6>
       <div class="mt-3 flex-start-row gap-32 flex-wrap" id="elenco"></div>
